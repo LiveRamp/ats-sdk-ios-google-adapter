@@ -1,0 +1,16 @@
+# BEGIN TERRAFORM MANAGED BLOCK
+"apiVersion": "backstage.io/v1alpha1"
+"kind": "Location"
+"metadata":
+  "annotations":
+    "github.com/project-slug": "LiveRamp/ats-sdk-ios-google-adapter"
+    "github.com/team-slug": "LiveRamp/addressability-admin"
+  "description": "Google Mediation Adapter for LiveRamp ATS SDK for iOS"
+  "name": "ats-sdk-ios-google-adapter"
+  "tags":
+  - "mobile"
+  - "sdk"
+  - "ios"
+  - "swift"
+"spec": {}
+# END TERRAFORM MANAGED BLOCK
