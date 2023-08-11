@@ -16,8 +16,8 @@ let package = Package(name: "LRAtsMediationAdapter",
                         )
                       ],
                       targets: [
-                        .binaryTarget(name: "LRAtsSDK", url: "https://ats-sdk-ios-prod.launch.liveramp.com/2.1.0/LRAtsSDK.zip", checksum: "bd0f02b589a202e7e7aca690f19baa7edb087626d769eba160fa2a0da2f18f0b"),
-                        .binaryTarget(name: "LRAtsSDKMediationAdapter", url: "https://ats-sdk-ios-prod.launch.liveramp.com/2.1.0/LRAtsSDKMediationAdapter.zip", checksum: "82cc4369cb9f9d220222cf890641a60463e34152a2f0aab1d5e733674fabf1b2"),
+                        .binaryTarget(name: "LRAtsSDK", url: "https://ats-sdk-ios-prod.launch.liveramp.com/2.2.0/LRAtsSDK.zip", checksum: "e44f08c6fa747d62ce0f14c6e3d517c803d88a9d99a5453ccc2d7f9673196014"),
+                        .binaryTarget(name: "LRAtsSDKMediationAdapter", url: "https://ats-sdk-ios-prod.launch.liveramp.com/2.2.0/LRAtsSDKMediationAdapter.zip", checksum: "349b7952a06c5a05098b2b394e287c65dd1d0071b26c85d7ac65a5436a0bb1ea"),
                         .target(name: "LRAtsMediationAdapterWrapper",
                                 dependencies: [
                                     "LRAtsSDK",
