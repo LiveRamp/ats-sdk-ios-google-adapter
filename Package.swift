@@ -9,6 +9,9 @@ let package = Package(name: "LRAtsMediationAdapter",
                             name: "LRAtsMediationAdapter",
                             targets: ["LRAtsMediationAdapterWrapper"]),
                       ],
+                      platforms: [
+                          .iOS(.v11)
+                      ],
                       dependencies: [
                         .package(
                             url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git"
