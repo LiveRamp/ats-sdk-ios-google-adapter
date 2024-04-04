@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(name: "LRAtsMediationAdapter",
+                      platforms: [
+                          .iOS(.v11)
+                      ],
                       products: [
                         .library(
                             name: "LRAtsMediationAdapter",
                             targets: ["LRAtsMediationAdapterWrapper"]),
                       ],
-                      platforms: [
-                          .iOS(.v11)
-                      ],
                       dependencies: [
                         .package(
-                            url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git"
+                            url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", "10.0.0"..<"12.0.0"
                         )
                       ],
                       targets: [
