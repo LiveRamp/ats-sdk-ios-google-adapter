@@ -11,6 +11,7 @@ To install LRAtsSDK in a Swift application
 
 # Usage
 To enable signal collection from LRAts SDK there are a few required steps before initializing AdMob SDK.
+The setup is applicable for version 2.9.0 and below. No extra setup needed from version 3.0.0 onwards.
 
 ```swift
 import LRAtsSDKMediationAdapter
@@ -21,7 +22,7 @@ LRAtsMediationAdapter.configure(atsConfiguration: LRAtsConfiguration(appId: "<#y
 // LRAtsMediationAdapter.hasConsentForNoLegislation = true
 ```
 
-For more information see our [documentation](https://docs.liveramp.com/identity/en/version-1-0--ios-ats-mobile-sdk-.html).
+For more information see our [documentation](https://developers.liveramp.com/authenticatedtraffic-api/docs/ios-methods-for-lratsmediationadapter).
 
 # Consent Requirements
 The SDK will automatically perform a geolocation check to ensure consent is properly set for GDPR and CCPA. Learn what this means for your application below:
