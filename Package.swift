@@ -10,7 +10,7 @@ let package = Package(name: "LRAtsMediationAdapter",
                       products: [
                           .library(
                               name: "LRAtsMediationAdapter",
-                              targets: ["LRAtsMediationAdapterWrapper"]),
+                              targets: ["LRAtsMediationAdapterWrapper"])
                       ],
                       dependencies: [
                           .package(
@@ -19,13 +19,13 @@ let package = Package(name: "LRAtsMediationAdapter",
                           )
                       ],
                       targets: [
-                          .binaryTarget(name: "LRAtsSDK", url: "https://ats-sdk-ios-prod.launch.liveramp.com/3.1.0/LRAtsSDK.zip", checksum: "6e921edf0ad542277f2ba34908cd3a85e697c33fdb9ef95eaee4b34b390d95bc"),
-                          .binaryTarget(name: "LRAtsSDKMediationAdapter", url: "https://ats-sdk-ios-prod.launch.liveramp.com/3.1.0/LRAtsSDKMediationAdapter.zip", checksum: "95e7fb14aba1d66fa8b6074b5b9e4d6d007191ec655dbe20f7393cc9d2310572"),
+                          .binaryTarget(name: "LRAtsSDK", url: "https://ats-sdk-ios-prod.launch.liveramp.com/3.2.0/LRAtsSDK.zip", checksum: "0485563866adb9809cea5f070e177f87b151ba3ed5232510e27b59c272f0213a"),
+                          .binaryTarget(name: "LRAtsSDKMediationAdapter", url: "https://ats-sdk-ios-prod.launch.liveramp.com/3.2.0/LRAtsSDKMediationAdapter.zip", checksum: "c563bb431134d3e2f95d81d92300138a4cd86886c3e0184a862dc7775928e132"),
                           .target(name: "LRAtsMediationAdapterWrapper",
                                   dependencies: [
                                       "LRAtsSDK",
                                       "LRAtsSDKMediationAdapter",
                                       .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads")
-                                  ]),
+                                  ])
                       ]
 )
